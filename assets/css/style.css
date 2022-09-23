@@ -150,3 +150,14 @@ th {
 .red {
     color: red;
 }
+
+@media (max-width: 400px) {
+    .crono-fullTimeDisplay {
+        font-size: 60px;
+        width: 315.27px;
+    }
+
+    .crono-fullTimeDisplay span {
+        font-size: 35px
+    }
+}
