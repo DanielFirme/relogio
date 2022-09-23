@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2d0338;
+}
+
+h2 {
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.resources {
+    display: flex;
+    width: 400vw;
+    flex-direction: row;
+    margin-left: -100vw;
+    height: 90vh;
+}
+
+.area {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resources-buttons {
+    height: 10vh;
+    margin: 0px auto;
+}
+
+.time-display, .crono-fullTimeDisplay, .timer-display, .alarm-display {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    background-color: #000000;
+    width: 100px;
+    padding: 5px 0;
+    opacity: .5;
+    transition: all ease 0.5s; 
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.crono-fullTimeDisplay {
+    height: 80px;
+    width: 370px;
+}
+
+.crono-fullTimeDisplay span {
+    font-size: 45px;
+    height: 80px;
+}
+
+.crono {
+    padding-bottom: 10px;
+}
+
+.crono-partialTimeDisplay {
+    font-size: 25px;
+    height: 10%;
+    width: 145px;
+}
+
+table {
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.time-record {
+    height: 70%;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.time-record--table {
+    display: none;
+}
+
+.crono-buttons {
+    height: 10%;
+    margin-top: 10px;
+}
+
+.crono-buttons button {
+    border-radius: 15px;
+}
+
+table {
+    max-width: 250px;
+    font-size: 15px;
+}
+
+th {
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+}
+
+.cursor {
+    cursor: default;
+}
+
+.voltaRestaurar:hover {
+    background-color: #30FCB67e;
+    border-color:  #30FCB657;
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+
+.parar:hover {
+    background-color: #ff33307e !important;
+    border-color: #ff333057 !important;
+}
+
+.retomar:hover {
+    background-color: #3e30ff7e !important;
+    border-color: #3330ff57 !important;
+}
+    
+.crono-buttons button:last-child:hover {
+    background-color: #a230ff7e;
+    border-color: #9130ff57;
+}
+
+.blueviolet {
+    color: blueviolet;
+}
+
+.red {
+    color: red;
+}
