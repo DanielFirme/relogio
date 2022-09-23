@@ -3,6 +3,9 @@ const button = document.querySelectorAll('button');
 
 //PROGRAMAÇÃO DO RELÓGIO
 let time;
+button[3].addEventListener('click', () => {
+    document.querySelector('.resources').style["margin-left"] = "0vw";
+});
 button[0].addEventListener('click', () => {
     if(button[0].innerText == 'Parar Hora'){
         clearInterval(time);
@@ -17,6 +20,10 @@ button[0].addEventListener('click', () => {
 });
 
 //PROGRAMAÇÃO DO CRONÔMETRO
+button[4].addEventListener('click', () => {
+    document.querySelector('.resources').style["margin-left"] = "-100vw";
+});
+
 class Cronometro {
     constructor(volta, tempoDasVoltas, tempoGeral){
         this.volta = volta;
@@ -62,9 +69,6 @@ let time2;
 let miliTime2;
 let cronoPartialStart = false;
 let html = "";
-button[5].addEventListener('click', () => {
-    document.querySelector('.resources').style["margin-left"] = "0vw";
-});
 
 button[1].addEventListener('mouseover', () => {
     cronoStart ? (button[1].setAttribute('class', 'voltaRestaurar')) : (button[1].setAttribute('class', 'cursor'), button[1].style.opacity = .5);
@@ -168,22 +172,4 @@ button[2].addEventListener('click', () => {
         clearInterval(time1);
         clearInterval(time2);
     }
-})
-
-
-//PROGRAÇÃO DO TEMPORIZADOR
-button[6].addEventListener('click', () => {
-    document.querySelector('.resources').style["margin-left"] = "-100vw";
-});
-
-button[7].addEventListener('click', () => {
-    document.querySelector('.resources').style["margin-left"] = "-200vw";
-});
-
-button[8].addEventListener('click', () => {
-    document.querySelector('.resources').style["margin-left"] = "-300vw";
-});
-    
-
-
-    
+})  
